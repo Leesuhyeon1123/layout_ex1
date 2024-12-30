@@ -1,1 +1,122 @@
 @charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 전체 레이아웃 */
+.container {
+  width: 1200px;
+  height: 1000px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+/* 상단 */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #045;
+}
+/* 로고 */
+.logo {
+  width: 300px;
+  background-color: aqua;
+  float: left;
+}
+.logo h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 100px;
+  text-align: center;
+}
+/* 메뉴 */
+nav {
+  position: relative;
+  width: 900px;
+  background-color: rgb(249, 131, 255);
+  float: right;
+  height: 100%;
+}
+#topmenu {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: calc(100% - 100px);
+  height: 60px;
+  background-color: red;
+  margin-top: 40px;
+}
+#topmenu li a {
+  width: calc(100% / 4);
+  float: left;
+  /* height: 60px; */
+  line-height: 60px;
+  background-color: aquamarine;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#topmenu li a:hover {
+  background-color: rgb(90, 196, 161);
+  color: #fff;
+}
+.logo h1:hover {
+  background-color: #045;
+}
+/* 메인 */
+.contents {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(250, 215, 255);
+}
+/* 힐링 */
+.healing {
+  width: 100%;
+  height: calc(100% / 2);
+  background-color: rgb(168, 253, 208);
+}
+/* 액티비티 */
+.activity {
+  width: 100%;
+  height: calc(100% / 2);
+  background-color: rgb(97, 97, 97);
+}
+.healing h2 {
+  background-color: antiquewhite;
+}
+/* 설명 */
+.decription {
+  width: 100%;
+  height: 300px;
+  background-color: cadetblue;
+}
+.dec-img {
+  float: left;
+  width: 450px;
+  height: 100%;
+  background-color: brown;
+}
+.dec-detail {
+  float: left;
+  width: calc(100% -450px);
+  height: 100%;
+  background-color: chartreuse;
+}
+.detail-top {
+  height: calc(100% / 2);
+  background-color: cornflowerblue;
+}
+.detail-bottom {
+  height: calc(100% / 2);
+  background-color: deeppink;
+}
+/* 하단 */
