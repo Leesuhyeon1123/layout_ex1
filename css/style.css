@@ -107,7 +107,7 @@ nav {
 }
 .dec-detail {
   float: left;
-  width: calc(100% -450px);
+  width: calc(100% - 450px);
   height: 100%;
   background-color: chartreuse;
 }
